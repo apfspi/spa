@@ -470,7 +470,7 @@ function getFormatedValue(data, type)
     try{
          var time_avg = truncateDecimals(convertMilli(data[type+'Time_avg'].value, a_timeFormat));
          var time_min = truncateDecimals(convertMilli(data[type+'Time_min'].value, a_timeFormat));
-         var time_max = truncateDecimals(convertMilli(data[type+'Time_avg'].value, a_timeFormat));
+         var time_max = truncateDecimals(convertMilli(data[type+'Time_max'].value, a_timeFormat));
 
          value = 'Average: ' + time_avg + '<br/> ' + 'Minimum: ' + time_min + ' <br/> ' + 'Maximum: ' + time_max;
       }
